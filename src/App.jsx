@@ -1,10 +1,12 @@
 import './App.css'
-import GsapTimeline from "./components/gsap_timeline"
+import Gsap_scrollTigger from './components/gsap_scrollTigger_basic'
+// import GsapTimeline from "./components/gsap_timeline"
 
 function App() {
   
   return <>
-    <GsapTimeline />
+    {/* <GsapTimeline /> */}
+    <Gsap_scrollTigger />
   </>
     
 }
