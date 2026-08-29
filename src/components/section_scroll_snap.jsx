@@ -8,6 +8,9 @@ export default function SectionScrollSnap(){
 
     useGSAP(()=>{
         const box = gsap.utils.toArray(".animation > div")
+        const left = box[0].getBoundingClientRect().left 
+        const step = box[1].getBoundingClientRect().left - box[0].getBoundingClientRect().left
+        box.shift()
         const tl = gsap.timeline({
             ease: "none",
             scrollTrigger: {
@@ -18,19 +21,23 @@ export default function SectionScrollSnap(){
                 scrub: true,
                 markers: true,
                 snap: {
-                    snapTo: "labels",
+                    snapTo: "labelsDirectional",
                     duration: 0.1,
                     ease: "none",
                     delay: 0
                 }
             }
         })
+
         tl.addLabel("box0")
-        box.forEach((item, i)=>{
-            tl.to(item, {x: -item.getBoundingClientRect().left})
-            .addLabel(`box${i+1}`)
-        }
-        )
+        .to(".animation", {x: -left})
+
+        box.forEach((_, i)=>{
+            tl.addLabel(`box${i+1}`)
+            .to(".animation", {x: `-=${step}`})
+        })
+
+        tl.addLabel("box5")
     })
 
     return <>
