@@ -1,5 +1,6 @@
 import './App.css'
-import StickyAnimation from './components/sticky_animation'
+import SectionScrollSnap from './components/section_scroll_snap'
+// import StickyAnimation from './components/sticky_animation'
 // import HorizontalAnimation from './components/horizontal_animation'
 // import ScrollAnimation2 from './components/scroll_animation2'
 // import ScrollAnimation1 from './components/scroll_animation'
@@ -13,8 +14,9 @@ function App() {
     <Gsap_scrollTigger /> 
     <ScrollAnimation1 />
     <ScrollAnimation2 />
-    <HorizontalAnimation />*/}
-    <StickyAnimation />
+    <HorizontalAnimation />
+    <StickyAnimation />*/}
+    <SectionScrollSnap />
   </>
     
 }
