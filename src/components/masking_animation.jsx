@@ -20,12 +20,13 @@ export default function MaskingAnimation() {
         tl
         .to(".box1", {
             webkitMaskSize: "100%",
-            duration: 199
+            ease: "none",
+            duration: 100
         })
         .to(".box2", {
             visibility: "visible",
-            duration: 1
-        })
+            duration: 30
+        }, "<70%")
     })
 
     return <>
