@@ -1,5 +1,6 @@
 import './App.css'
-import ParallaxAnimation from './components/parallax_animation'
+import MaskingAnimation from './components/masking_animation'
+// import ParallaxAnimation from './components/parallax_animation'
 // import CardEnteringViewportFast from './components/card_entering_veiwport_fast'
 // import MovingFrameSnap from './components/moving_frame_snap'
 // import SectionScrollSnap from './components/section_scroll_snap'
@@ -21,8 +22,9 @@ function App() {
     <StickyAnimation />
     <SectionScrollSnap />
     <MovingFrameSnap />
-    <CardEnteringViewportFast />*/}
-    <ParallaxAnimation />
+    <CardEnteringViewportFast />
+    <ParallaxAnimation />*/}
+    <MaskingAnimation /> 
   </>
     
 }
