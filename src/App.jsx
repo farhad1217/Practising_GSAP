@@ -1,5 +1,6 @@
 import './App.css'
-import MaskingAnimation from './components/masking_animation'
+import CardShrinkAndGrowUP from './components/card_shrink_and_grow_up'
+// import MaskingAnimation from './components/masking_animation'
 // import ParallaxAnimation from './components/parallax_animation'
 // import CardEnteringViewportFast from './components/card_entering_veiwport_fast'
 // import MovingFrameSnap from './components/moving_frame_snap'
@@ -23,8 +24,9 @@ function App() {
     <SectionScrollSnap />
     <MovingFrameSnap />
     <CardEnteringViewportFast />
-    <ParallaxAnimation />*/}
-    <MaskingAnimation /> 
+    <ParallaxAnimation />
+    <MaskingAnimation /> */}
+    <CardShrinkAndGrowUP />
   </>
     
 }
