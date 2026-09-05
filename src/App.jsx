@@ -1,5 +1,6 @@
 import './App.css'
-import CardShrinkAndGrowUP from './components/card_shrink_and_grow_up'
+import VideoAnimation from './components/video_animation'
+// import CardShrinkAndGrowUP from './components/card_shrink_and_grow_up'
 // import MaskingAnimation from './components/masking_animation'
 // import ParallaxAnimation from './components/parallax_animation'
 // import CardEnteringViewportFast from './components/card_entering_veiwport_fast'
@@ -25,8 +26,9 @@ function App() {
     <MovingFrameSnap />
     <CardEnteringViewportFast />
     <ParallaxAnimation />
-    <MaskingAnimation /> */}
-    <CardShrinkAndGrowUP />
+    <MaskingAnimation /> 
+    <CardShrinkAndGrowUP />*/}
+    <VideoAnimation />
   </>
     
 }
