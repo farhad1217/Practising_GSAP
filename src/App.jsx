@@ -1,5 +1,6 @@
 import './App.css'
-import VideoAnimation from './components/video_animation'
+import ScrollSpeedEffect from './components/scroll_speed_effect'
+// import VideoAnimation from './components/video_animation'
 // import CardShrinkAndGrowUP from './components/card_shrink_and_grow_up'
 // import MaskingAnimation from './components/masking_animation'
 // import ParallaxAnimation from './components/parallax_animation'
@@ -27,8 +28,9 @@ function App() {
     <CardEnteringViewportFast />
     <ParallaxAnimation />
     <MaskingAnimation /> 
-    <CardShrinkAndGrowUP />*/}
-    <VideoAnimation />
+    <CardShrinkAndGrowUP />
+    <VideoAnimation />*/}
+    <ScrollSpeedEffect />
   </>
     
 }
